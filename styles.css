@@ -1,0 +1,55 @@
+.boks {
+  background: #f3f3f3;
+  padding: 1rem;
+  border: 2px solid #ccc;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  padding: 1rem;
+  margin-inline: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.artikel {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 900px) {
+  .grid-1 {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .korttekst {
+    order: 1;
+  }
+  .billede {
+    order: 2;
+  }
+  .artikel {
+    order: 3;
+    grid-column: auto;
+  }
+}
+
+.wireframe-proof {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem 1rem;
+}
+.wireframe-proof img {
+  border: 1px dashed #bbb;
+}
+.wireframe-proof figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
